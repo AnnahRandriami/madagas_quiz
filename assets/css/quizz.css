@@ -1,0 +1,115 @@
+.content-quizz{
+    width: 700px;
+    height: 250px;
+    position: absolute;
+    border-radius: 200px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgb(0 0 0/10%), 0 8px 16px rgb(0 0 0/33%);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+    justify-content: center;
+    visibility: hidden;
+
+}
+
+.list-question{
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    border-radius: 200px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgb(0 0 0/10%), 0 8px 16px rgb(0 0 0/33%);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+    justify-content: center;
+    visibility: hidden;
+   
+}
+
+.choices button{
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.choices button:hover{
+    background-color: green;
+    color: black;
+    width: 310px;
+    font-size: 1.2rem;
+}
+
+.content-quizz .titre{
+    text-align: center;
+    color:green;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.content-quizz .choice-quizz{
+    margin-left: 50px;
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+    
+   
+}
+
+select{
+    width: 350px;
+    font-size: 1rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+
+.quizz-button{
+   position: relative;
+   top: 10%;
+   text-align: center;
+}
+
+.quizz-button button{
+  background-color: green;
+  color: white;
+}
+.quizz-button button:hover{
+    background-color:#efefef;
+color: black;
+}
+
+
+.quizQuest h2{
+    margin-top: 5px;
+    margin-left: 35px;
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: -25px;
+}
+  .choices p{
+      margin-left: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+  }
+
+  #quiz h1{
+      margin-left: 200px;
+  }
+
+#quiz h3{
+    margin: left;
+    margin-left: 200px;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}

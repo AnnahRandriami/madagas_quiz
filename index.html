@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/quizz.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <title>MAdagasc'quizz</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-login" id="login">
+            <div class="login-title">
+                <h1>Simplon quizz</h1>
+                <p>Testez vos connaissances!</p>
+            </div>
+            <div class="login-form">
+                <div>
+                    <div class="form-row">
+                        <input id="email" type="text" placeholder="Adresse e-mail ou numéro de tel.">
+                    </div>
+                    <div class="form-row">
+                        <input id="password" type="password" placeholder="Mot de passe">
+                    </div>
+                    <div class="form-button">
+                        <button class="bt-login-submit" id="connexion">Connexion</button>
+        
+                    </div>
+                    <div class="form-infos">
+                        <p>
+                            <a href="#"> Mot de passe oublié.</a>
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="form-button">
+                        <button class="bt-login-create-account" id="createAccount" >Créer un compte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="container-register" id="register-popup">
+        <div class="close" id="close-register">
+            <i class="fas fa-times" id="close"></i>
+        </div>
+        <div class="register-title">
+            <h2>S'inscrire</h2>
+            <p>Il suffit de remplir les cases!</p>
+        </div>
+        <div class="divider"></div>
+        <div class="register-form">
+            <form>
+                <div class="form-group-input">
+                    <input type="text" id="name" placeholder="Prénom">
+                    <input type="text" id="firstName" placeholder="Nom de famille">
+                </div>
+                <div class="form-inline-input">
+                    <input type="text" id="email1" placeholder="Numéro de mobile ou e-mail">
+                </div>
+                <div class="form-inline-input">
+                    <input type="text" id="pseudo"placeholder="Votre pseudo">
+                </div>
+                <div class="form-inline-input">
+                    <input type="password" id="mdp" placeholder="Nouveau mot de passe">
+                </div>
+                <div class="form-inline-date">
+                    <p>Date de naissance <i class="fas fa-question-circle"></i></p>
+                    <div class="form-select-date">
+                        <select name="" id="day" class="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <select name="" id="month" class="month">
+                            <option value="Janvier">Janvier</option>
+                            <option value="Février">Février</option>
+                            <option value="Mars">Mars</option>
+                            <option value="Avril">Avril</option>
+                            <option value="Mai">Mai</option>
+                            <option value="Juin">Juin</option>
+                        </select>
+                        <select name="" id="year" class="year">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-register-button">
+                    <button class="bt-register-submit" id="inscription">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<div class="content-quizz" id="content-quizz">
+    <div class="titre">
+        <p>BIENVENUE DANS MADAGAS'QUIZZ</p>
+    </div>
+    <div class="choice-quizz">
+        <label for="theme-select">Choisissez un thème:</label>
+
+<select name="pets" id="theme-select">
+    <option value="0">Selectionnez un thème</option>
+<option value="1">Culture</option>
+<option value="2">Ethnie</option>
+<option value="3">Nature</option>
+
+</select>
+
+    </div>
+    <div class="quizz-button">
+        <button id="choisir">Choisir</button>
+    </div>
+</div>
+
+<div class="list-question" id="list-question">
+<div class="quizQuest" id="quiz">
+    <h1><span>Q</span>uiz <i class="far fa-question-circle"></i></h1>
+    <h2 id="question"></h2>
+    <h3 id="score"></h3>
+
+    <div class="choices">
+        <button id="guess0" class="btn">
+            <p id="choice0"></p>
+        </button>
+
+        <button id="guess1" class="btn">
+            <p id="choice1"></p>
+        </button>
+
+        <button id="guess2" class="btn">
+            <p id="choice2"></p>
+        </button>
+
+        <button id="guess3" class="btn">
+            <p id="choice3"></p>
+        </button>
+
+        <p class="progress" id="progress"></p>
+       
+    </div>
+</div>
+</div>
+
+
+</body>
+<script src="./assets/script/logReg.js"></script>
+<script src="./assets/script/quizz.js"></script>
+<script src="./assets/script/choice.js"></script>
+</html>
